@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from './components/layout/Header';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,43 +10,25 @@ import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
-
   // Add dark class to html element
   useEffect(() => {
     document.documentElement.classList.add('dark');
   }, []);
 
-  const renderSection = () => {
-    switch (activeSection) {
-      case 'home':
-        return <Home setActiveSection={setActiveSection} />;
-      case 'about':
-        return <About />;
-      case 'skills':
-        return <Skills />;
-      case 'certificates':
-        return <Certificates />;
-      case 'experience':
-        return <Experience />;
-      case 'projects':
-        return <Projects />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return <Home setActiveSection={setActiveSection} />;
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main>
-        {renderSection()}
+    <div className="bg-gray-950 text-white">
+      <Header />
+      <main className="flex flex-col">
+        <Home />
+        <About />
+        <Skills />
+        <Certificates />
+        <Experience />
+        <Projects />
+        <Contact />
       </main>
     </div>
   );
 }
 
 export default App;
-

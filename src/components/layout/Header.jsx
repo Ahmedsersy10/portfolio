@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const Header = ({ activeSection, setActiveSection }) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
@@ -11,15 +11,23 @@ const Header = ({ activeSection, setActiveSection }) => {
     { id: 'skills', label: 'Skills' },
     { id: 'certificates', label: 'Certificates' },
     { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'contact', label: 'Contact' },
   ];
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Ahmedsersy10', label: 'GitHub' },
     { icon: Linkedin, href: 'https://eg.linkedin.com/in/ahmed-elsersy-56852036b', label: 'LinkedIn' },
-    { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you', label: 'Email' },
+    { icon: Mail, href: 'mailto:ahmedelsersy101@gmail.com', label: 'Email' },
     { icon: ExternalLink, href: 'https://www.upwork.com/freelancers/~014fd696c7d53dcef7?mp_source=share', label: 'UPwork' }
   ];
+
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
@@ -27,7 +35,9 @@ const Header = ({ activeSection, setActiveSection }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-white">Ahmedelsersy</h1>
+            <h1 className="text-xl font-bold text-white cursor-pointer" onClick={() => handleScrollTo('home')}>
+              Ahmedelsersy
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -35,12 +45,8 @@ const Header = ({ activeSection, setActiveSection }) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => setActiveSection(item.id)}
-                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  activeSection === item.id
-                    ? 'text-blue-400'
-                    : 'text-gray-300 hover:text-white'
-                }`}
+                onClick={() => handleScrollTo(item.id)}
+                className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-200"
               >
                 {item.label}
               </button>
@@ -82,20 +88,13 @@ const Header = ({ activeSection, setActiveSection }) => {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => {
-                    setActiveSection(item.id);
-                    setIsMenuOpen(false);
-                  }}
-                  className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                    activeSection === item.id
-                      ? 'text-blue-400'
-                      : 'text-gray-300 hover:text-white'
-                  }`}
+                  onClick={() => handleScrollTo(item.id)}
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-300 hover:text-white transition-colors duration-200"
                 >
                   {item.label}
                 </button>
               ))}
-              
+
               {/* Mobile Social Links */}
               <div className="flex items-center space-x-4 px-3 py-2">
                 {socialLinks.map((social, index) => (
@@ -118,4 +117,3 @@ const Header = ({ activeSection, setActiveSection }) => {
 };
 
 export default Header;
-

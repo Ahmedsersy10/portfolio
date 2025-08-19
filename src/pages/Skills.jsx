@@ -41,7 +41,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <section id="skills" className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

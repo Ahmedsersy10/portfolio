@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: Facebook,
       label: "Facebook",
-      href: "https://wa.me/qr/E7KX4XV5NJJAI1",
+      href: "https://www.facebook.com/AhMedAlsErSy10",
       color: "hover:text-green-400"
     },
     {
@@ -81,7 +81,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+    <section id="contact" className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
