@@ -93,7 +93,7 @@ const Home = ({ setActiveSection }) => {
               <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-gray-700 bg-gray-800">
                 {/* Placeholder for profile image */}
                 <img
-                  src="/Me.jpg"
+                  src="Me.jpg"
                   alt="My Profile"
                   className="w-full h-full object-cover"
                 />
