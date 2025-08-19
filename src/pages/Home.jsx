@@ -15,7 +15,9 @@ const Home = ({ setActiveSection }) => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Flex container مع اتجاه عمودي على الشاشات الصغيرة */}
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+          
           {/* Left Content */}
           <div className="space-y-8">
             {/* Availability Badge */}
@@ -37,9 +39,7 @@ const Home = ({ setActiveSection }) => {
             {/* Description */}
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed max-w-xl">
               <p>
-                I craft modern, scalable, and user-friendly mobile applications
-                using Flutter. My focus is on delivering seamless user
-                experiences and efficient solutions that help businesses grow.
+                I craft modern, scalable, and user-friendly mobile applications using Flutter. My focus is on delivering seamless user experiences and efficient solutions that help businesses grow.
               </p>
             </div>
 
@@ -62,9 +62,7 @@ const Home = ({ setActiveSection }) => {
 
             {/* Tech Stack */}
             <div className="space-y-4">
-              <p className="text-gray-400 text-sm font-medium">
-                Tech I work with:
-              </p>
+              <p className="text-gray-400 text-sm font-medium">Tech I work with:</p>
               <div className="flex flex-wrap gap-3">
                 {techStack.map((tech, index) => (
                   <div
@@ -72,9 +70,7 @@ const Home = ({ setActiveSection }) => {
                     className="flex items-center space-x-2 px-3 py-2 bg-gray-800 rounded-lg border border-gray-700"
                   >
                     <div className={`w-3 h-3 rounded-full ${tech.color}`}></div>
-                    <span className="text-gray-300 text-sm font-medium">
-                      {tech.name}
-                    </span>
+                    <span className="text-gray-300 text-sm font-medium">{tech.name}</span>
                   </div>
                 ))}
               </div>
@@ -91,12 +87,7 @@ const Home = ({ setActiveSection }) => {
 
               {/* Profile Image Container */}
               <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-gray-700 bg-gray-800">
-                {/* Placeholder for profile image */}
-                <img
-                  src="Me.jpg"
-                  alt="My Profile"
-                  className="w-full h-full object-cover"
-                />
+                <img src="Me.jpg" alt="My Profile" className="w-full h-full object-cover" />
               </div>
 
               {/* Floating Code Icon */}
@@ -105,6 +96,7 @@ const Home = ({ setActiveSection }) => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
