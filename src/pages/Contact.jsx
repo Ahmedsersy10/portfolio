@@ -49,27 +49,27 @@ const Contact = () => {
       color: "hover:text-gray-300"
     },
     {
-      icon: Instagram,
-      label: "Instagram",
-      href: "https://www.instagram.com/ahmedelsersy10/",
-      color: "hover:text-pink-400"
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://eg.linkedin.com/in/ahmed-elsersy-56852036b",
       color: "hover:text-blue-400"
     },
     {
-      icon: MessageCircle,
-      label: "WhatsApp",
-      href: "https://wa.me/qr/E7KX4XV5NJJAI1",
-      color: "hover:text-green-400"
-    },
-    {
       icon: Facebook,
       label: "Facebook",
       href: "https://www.facebook.com/AhMedAlsErSy10",
+      color: "hover:text-green-400"
+    },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://www.instagram.com/ahmedelsersy10/",
+      color: "hover:text-pink-400"
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/qr/E7KX4XV5NJJAI1",
       color: "hover:text-green-400"
     },
     {
