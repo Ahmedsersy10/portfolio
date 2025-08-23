@@ -56,19 +56,20 @@ const Home = () => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <Button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium"
-          >
-            View My Work
-          </Button>
-          <Button
-            variant="outline"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-6 py-3 text-base font-medium"
-          >
-            Contact Me
-          </Button>
-        </div>
+       <div className="flex flex-col sm:flex-row gap-4 pt-4">
+  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium">
+    <a href="#projects">
+      View My Work
+    </a>
+  </Button>
+
+  <Button asChild variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-6 py-3 text-base font-medium">
+    <a href="#contact">
+      Contact Me
+    </a>
+  </Button>
+</div>
+
       </div>
 
       {/* Right Content - Profile Image */}

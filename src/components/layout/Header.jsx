@@ -8,9 +8,9 @@ const Header = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'certificates', label: 'Certificates' },
+    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -18,7 +18,7 @@ const Header = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Ahmedsersy10', label: 'GitHub' },
     { icon: Linkedin, href: 'https://eg.linkedin.com/in/ahmed-elsersy-56852036b', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:ahmedelsersy101@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you', label: 'Email' },
     { icon: ExternalLink, href: 'https://www.upwork.com/freelancers/~014fd696c7d53dcef7?mp_source=share', label: 'UPwork' }
   ];
 
