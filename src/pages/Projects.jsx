@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Weekly – Task & productivity app',
       description: 'Task & productivity app with week-based tracking.',
       image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'Firebase','Notifications','Hive','Localization','Bolc-Cubit'],
+      technologies: ['Flutter', 'Dart', 'Firebase','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI","Adaptive layouts"],
       githubUrl: 'https://github.com/Ahmedsersy10/weekly',
       liveUrl: '#',
       gradient: 'from-purple-600 to-blue-600'
@@ -16,17 +16,17 @@ const Projects = () => {
       title: 'Meal Monkey Delivery',
       description: 'Food delivery app with a smooth UI/UX.',
       image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'REST APIs'],
+      technologies: ['Flutter', 'Dart',],
       githubUrl: 'https://github.com/Ahmedsersy10/meal_monkey',
       liveUrl: '#',
       gradient: 'from-cyan-500 to-blue-500'
     },
     {
-      title: 'Elzero Daily',
-      description: 'Educational content app.',
+      title: 'Islamy',
+      description: 'Islamy app.',
       image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'Firebase'],
-      githubUrl: 'https://github.com/Ahmedsersy10/elzero_daily',
+      technologies: ['Flutter', 'Dart'],
+      githubUrl: 'https://github.com/Ahmedsersy10/islamy',
       liveUrl: '#',
       gradient: 'from-gray-600 to-gray-800'
     },
