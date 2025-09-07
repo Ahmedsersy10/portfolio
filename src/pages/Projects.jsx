@@ -9,7 +9,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['Flutter', 'Dart', 'Firebase','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI","Adaptive layouts"],
       githubUrl: 'https://github.com/Ahmedsersy10/weekly',
-      liveUrl: '#',
+      liveUrl: 'https://ahmedsersy10.github.io/weekly_app/',
       gradient: 'from-purple-600 to-blue-600'
     },
     {
