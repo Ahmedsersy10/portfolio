@@ -58,7 +58,7 @@ const Contact = () => {
       icon: Facebook,
       label: "Facebook",
       href: "https://www.facebook.com/AhMedAlsErSy10",
-      color: "hover:text-blue-900"
+      color: "hover:text-blue-600"
     },
     {
       icon: Instagram,
@@ -76,7 +76,7 @@ const Contact = () => {
       icon: MessageCircle,
       label: "Telegram",
       href: "https://t.me/ahmedelsersy10",
-      color: "hover:text-blue-700"
+      color: "hover:text-blue-500"
     },
   ];
 

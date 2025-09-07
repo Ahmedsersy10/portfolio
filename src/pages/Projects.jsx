@@ -67,7 +67,7 @@ const Projects = () => {
                   <div className="text-white text-6xl opacity-20">
                     {project.title.includes('Weekly') && '🗓️'}
                     {project.title.includes('Meal Monkey') && '🍔'}
-                    {project.title.includes('Elzero') && '📚'}
+                    {project.title.includes('Islamy') && '📚'}
                     {project.title.includes('Asers') && '💻'}
                   </div>
                 </div>
