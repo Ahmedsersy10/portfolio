@@ -13,17 +13,17 @@ const Projects = () => {
       gradient: 'from-purple-600 to-blue-600'
     },
     {
-      title: 'Meal Monkey Delivery',
+      title: 'Eldemeshki Delivery',
       description: 'Food delivery app with a smooth UI/UX.',
       image: '/api/placeholder/400/250',
       technologies: ['Flutter', 'Dart',],
-      githubUrl: 'https://github.com/Ahmedsersy10/meal_monkey',
+      githubUrl: 'https://github.com/Ahmedsersy10/eldemeshki_delivery',
       liveUrl: '#',
       gradient: 'from-cyan-500 to-blue-500'
     },
     {
       title: 'Islamy',
-      description: 'Islamy app.',
+      description: 'An Islamic app that provides Quran, prayers, supplications, and Qibla direction all in one place.',
       image: '/api/placeholder/400/250',
       technologies: ['Flutter', 'Dart'],
       githubUrl: 'https://github.com/Ahmedsersy10/islamy',
@@ -34,7 +34,7 @@ const Projects = () => {
       title: 'Asers Programming',
       description: 'Learning platform for programming concepts.',
       image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'Firebase'],
+      technologies: ['Flutter', 'Dart',],
       githubUrl: 'https://github.com/Ahmedsersy10/asers_programming',
       liveUrl: '#',
       gradient: 'from-indigo-600 to-purple-600'
@@ -66,7 +66,7 @@ const Projects = () => {
                 <div className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
                   <div className="text-white text-6xl opacity-20">
                     {project.title.includes('Weekly') && '🗓️'}
-                    {project.title.includes('Meal Monkey') && '🍔'}
+                    {project.title.includes('Eldemeshki') && '🍔'}
                     {project.title.includes('Islamy') && '📚'}
                     {project.title.includes('Asers') && '💻'}
                   </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const Home = () => {
   const techStack = [
@@ -57,11 +58,15 @@ const Home = () => {
 
         {/* Action Buttons */}
        <div className="flex flex-col sm:flex-row gap-4 pt-4">
-  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium">
-    <a href="#projects">
-      View My Work
-    </a>
-  </Button>
+<Button
+  asChild
+  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium flex items-center gap-2"
+>
+  <a href="/cv.pdf" download>
+    <Download className="w-5 h-5" /> {/* أيقونة التحميل */}
+    Download CV
+  </a>
+</Button>
 
   <Button asChild variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white px-6 py-3 text-base font-medium">
     <a href="#contact">
