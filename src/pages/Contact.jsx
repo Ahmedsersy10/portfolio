@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://eg.linkedin.com/in/ahmed-elsersy-56852036b",
+      href: "https://www.linkedin.com/in/ahmedelsersy11",
       color: "hover:text-blue-400"
     },
     {

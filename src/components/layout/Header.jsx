@@ -17,7 +17,7 @@ const Header = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Ahmedsersy10', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://eg.linkedin.com/in/ahmed-elsersy-56852036b', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ahmedelsersy11', label: 'LinkedIn' },
     { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ahmedelsersy101@gmail.com&su=Hello Ahmed&body=I would like to contact you', label: 'Email' },
     { icon: ExternalLink, href: 'https://www.upwork.com/freelancers/~014fd696c7d53dcef7?mp_source=share', label: 'UPwork' }
   ];
