@@ -62,7 +62,7 @@ const Home = () => {
   asChild
   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-medium flex items-center gap-2"
 >
-  <a href="/cv.pdf" download>
+  <a href="/AhmedelsersyCV.pdf" download>
     <Download className="w-5 h-5" /> {/* أيقونة التحميل */}
     Download CV
   </a>
