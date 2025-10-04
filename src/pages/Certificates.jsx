@@ -6,31 +6,31 @@ const Certificates = () => {
     title: 'Mastering Programming: A Comprehensive Course In [Arabic]',
     issuer: 'Udemy - Tharwat Samy',
     date: 'August 2024',
-    link: '/flutter.jpg'   // ✨ مثال: صورة شهادة
+    link: 'flutter.jpg'   // ✨ مثال: صورة شهادة
   },
   {
     title: 'Complete Flutter & Dart Development Course [Arabic]',
     issuer: 'Udemy - Tharwat Samy',
     date: 'October 2024',
-    link: '/flutter.jpg'
+    link: 'flutter.jpg'
   },
   {
     title: 'Flutter Advanced Course Bloc and MVVM Pattern [Arabic]',
     issuer: 'Udemy - Tharwat Samy',
     date: 'April 2025',
-    link: '/bloc.jpg'
+    link: 'bloc.jpg'
   },
   {
     title: 'Master Git & GitHub: Essential Skills for Developers [Arabic]',
     issuer: 'Udemy - Tharwat Samy',
     date: 'April 2025',
-    link: '/git.jpg'
+    link: 'git.jpg'
   },
   {
     title: 'Mastering Flutter: Responsive & Adaptive UI Design [Arabic]',
     issuer: 'Udemy - Tharwat Samy',
     date: 'April 2025',
-    link: '/responsive.jpg'
+    link: 'responsive.jpg'
   }
 ];
 

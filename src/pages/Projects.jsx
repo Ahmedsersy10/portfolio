@@ -7,9 +7,9 @@ const Projects = () => {
       title: 'Weekly – Task & productivity app',
       description: 'Task & productivity app with week-based tracking.',
       image: '/api/placeholder/400/250',
-      technologies: ['Flutter', 'Dart', 'Firebase','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI","Adaptive layouts"],
-      githubUrl: 'https://github.com/Ahmedsersy10/weekly',
-      liveUrl: 'https://ahmedsersy10.github.io/weekly_app/',
+      technologies: ['Flutter', 'Dart', 'Supabase','Notifications','Hive','Localization','Bolc-Cubit',"Responsive UI","Adaptive layouts"],
+      githubUrl: 'https://github.com/ahmedelsersy101/weekly',
+      liveUrl: 'https://ahmedelsersy101.github.io/weekly_live/',
       gradient: 'from-purple-600 to-blue-600'
     },
     {

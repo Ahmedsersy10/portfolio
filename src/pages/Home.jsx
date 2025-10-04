@@ -87,7 +87,7 @@ const Home = () => {
 
           {/* Profile Image Container */}
           <div className="relative w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 rounded-full overflow-hidden border-4 border-gray-700 bg-gray-800">
-            <img src="Me.jpg" alt="My Profile" className="w-full h-full object-cover" />
+            <img src="me.png" alt="My Profile" className="w-full h-full object-cover" />
           </div>
 
           {/* Floating Code Icon */}
